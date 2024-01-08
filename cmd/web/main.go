@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/nirvio/bookings/pkg/config"
-	"github.com/nirvio/bookings/pkg/handlers"
-	"github.com/nirvio/bookings/pkg/render"
+	"github.com/nirvio/bookings/internal/config"
+	"github.com/nirvio/bookings/internal/handlers"
+	"github.com/nirvio/bookings/internal/render"
 )
 
 const portNumber = ":8080"
