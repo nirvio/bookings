@@ -33,9 +33,6 @@
 				border-color: #6c757d;
 			}
 
-			p {
-			}
-
 			.paraClass {
 				font-size: 3em;
 			}
@@ -269,6 +266,24 @@
 				};
 			}
 		</script>
+
+		{{ with.Error }}
+		<script>
+			notify('{{.}}', 'error');
+		</script>
+		{{ end }}
+
+		{{ with.Flash }}
+		<script>
+			notify('{{.}}', 'success');
+		</script>
+		{{ end }}
+
+		{{ with.Warning }}
+		<script>
+			notify('{{.}}', 'warning');
+		</script>
+		{{ end }}
 	</body>
 </html>
 {{ end }}
