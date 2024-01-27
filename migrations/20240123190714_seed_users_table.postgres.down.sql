@@ -1,0 +1,1 @@
+delete from users where email = 'matiasrecondo77@gmail.com';
