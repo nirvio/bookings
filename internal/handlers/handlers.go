@@ -309,6 +309,7 @@ type jsonResponse struct {
 
 // AvailabilityJSON handles request for availability and sends JSON response
 func (m *Repository) AvailabilityJSON(w http.ResponseWriter, r *http.Request) {
+	log.Println("AvailabilityJSON chiamato")
 	// need to parse request body
 	err := r.ParseForm()
 	if err != nil {
