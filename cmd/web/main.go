@@ -58,7 +58,7 @@ func run() (*driver.DB, error) {
 	gob.Register(map[string]int{})
 
 	// read flags
-	inProduction := flag.Bool("production", false, "Application is in production")
+	inProduction := flag.Bool("production", true, "Application is in production")
 	useCache := flag.Bool("cache", true, "Use template cache")
 	dbHost := flag.String("dbhost", "localhost", "Database host")
 	dbName := flag.String("dbname", "", "Database name")
